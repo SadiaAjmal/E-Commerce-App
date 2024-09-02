@@ -18,41 +18,6 @@ const ShopContextProvider = (props) => {
 
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
- /*
-  useEffect(() => {
-
-    const storedCartItems = localStorage.getItem('cartItems');
-
-    if (storedCartItems && storedCartItems !== '') {
-
-      try {
-
-        setCartItems(JSON.parse(storedCartItems));
-
-      } catch (error) {
-
-        console.error('Error parsing stored cart items:', error);
-
-        setCartItems(getDefaultCart()); // Set to default cart instead of empty object
-
-      }
-
-    } else {
-
-      setCartItems(getDefaultCart()); // Set to default cart instead of empty object
-
-    }
-
-  }, []);
-
-
-  useEffect(() => {
-
-    localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
-  }, [cartItems]);
- */
-
     const addToCart = (itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
     }
