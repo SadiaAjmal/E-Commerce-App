@@ -14,7 +14,7 @@ const {all_product, getTotalAmount, cartItems, removeFromCart} =useContext(ShopC
 
 
 return (
-    <div className='mt-24 md:px-20 px-10'>
+    <div className='mt-24 md:px-20 px-3'>
 
 
         <div className=' lg:block hidden'>

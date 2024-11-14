@@ -11,9 +11,9 @@ import { ShopContext } from '../Context/ShopContext';
 
 function Navbar() {
 
-    const[toggle,setToggle]=useState(false);
-    const {getTotalCartItems} = useContext(ShopContext);
 
+    const {getTotalCartItems} = useContext(ShopContext);
+    const[toggle,setToggle]=useState(false);
     const menu=(()=>{
             setToggle(!toggle);
         })
@@ -21,7 +21,7 @@ function Navbar() {
     return (
         <div>
 
-       <nav className='bg-white md:px-20 px-5 py-3 flex justify-between shadow-lg fixed top-0 z-10 w-full'>
+       <nav className='bg-white md:px-20 px-3 py-3 flex justify-between shadow-lg fixed top-0 z-10 w-full'>
 
 
         <div className='flex items-center gap-2'>

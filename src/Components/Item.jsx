@@ -1,10 +1,12 @@
 import React from 'react'
-import Product from '../Pages/Product'
 import {Link} from 'react-router-dom'
 
 function Item(props) {
   return (
-    <div className='w-[250px] mt-10 hover:scale-105 duration-75 '>
+
+<div className=''>
+
+    <div className=' w-[250px] mt-10 hover:scale-105 duration-75 '>
         <Link to={`/product/${props.id}`}><img onClick={window.scrollTo(0,0)} src={props.image}/></Link>
         <p className=' my-1 mx-0 text-[18px] p-3'>{props.name}</p>
 
@@ -16,7 +18,7 @@ function Item(props) {
                 ${props.old_price}
             </div>
         </div>
-    </div>
+    </div></div>
   )
 }
 

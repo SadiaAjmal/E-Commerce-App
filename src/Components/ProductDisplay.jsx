@@ -8,7 +8,7 @@ const ProductDisplay = (props) => {
     const {addToCart} = useContext(ShopContext)
 
   return (
-    <div className=' md:px-20 px-10 mt-5 lg:flex justify-between items-center space-y-10'>
+    <div className=' md:px-20 px-3 mt-5 lg:flex justify-between items-center space-y-10'>
         <div className='flex flex-row gap-6 basis-[43%] justify-center items-center'>
             <div className=' flex flex-col gap-3 md:gap-5 justify-center'>
                 <img src={product.image} alt="Product Image" className=' w-20 md:w-24 lg:w-36' />

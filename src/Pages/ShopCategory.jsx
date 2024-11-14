@@ -12,7 +12,7 @@ const ShopCategory = (props) => {
 console.log(all_product);
 
   return (
-    <div className=' mt-[81px] md:px-20 px-10 flex flex-col items-center justify-center'>
+    <div className=' mt-[81px] md:px-20 px-3 flex flex-col items-center justify-center'>
       <img src={props.banner} alt="" />
 
       <div>
